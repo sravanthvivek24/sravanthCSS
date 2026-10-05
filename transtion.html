@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: bisque;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: border-radius,background-color,color,font-family; */
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        .box:hover {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-color: aqua;
+            color: brown;
+            font-family: lucida handwriting;
+        }
+
+        .box1 {
+            background-color: lightcoral;
+            border: 2px solid black;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transition-property: all;
+            transition-duration: 5s; 
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s; */
+            transition: all 5s ease-in-out 2s;
+
+        }
+
+        .box1:hover {
+            width: 500px;
+            height: 100px;
+            justify-content: right;
+            background-color: lightseagreen;
+            border-radius: 10px;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box">
+            Hero
+        </div><br><br><br>
+        <div class="box1">
+        >>>>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: grid;
+            grid-template-columns: repeat(5,200px);
+            grid-template-rows:80px 300px 80px;
+        }
+        .box{
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+        }
+        .head{
+            grid-area: 1/1/2/6;
+            background-color: red;
+            
+        }
+        .side{
+            grid-area: 2/1/3/2;
+            background-color: green;
+        }
+        .main{
+            grid-area: 2/2/3/5;
+            background-color: yellow;
+        }
+        .right{
+            grid-area: 2/5/3/6;
+            background-color: green;
+        }
+        .foot{
+            grid-area: 3/1/4/6;
+            background-color:red     ;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="cont">
+    <div class="box head">Header</div>
+    <div class="box side">sidebar</div>
+    <div class="box main">main</div>
+    <div class="box right">Rightbar</div>
+    <div class="box foot">Footer</div>
+   </div> 
+</body>
+</html>
+<br><br><br><br><br>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont1{
+            display: grid;
+            /* grid-template-columns: repeat(3,200px);
+            grid-template-rows: repeat(3,100px); */
+
+            grid-template-areas: "A B " "C D" "E F";
+        }
+        .box{
+            border: 2px solid black;
+        }
+        .box1{
+            background-color: red;
+            grid-area:A ;
+        }
+        .box2{
+            background-color: yellow;
+            grid-area: B;
+        }
+        .box3{
+            background-color: green;
+            grid-area: C;
+        }
+        .box4{
+            background-color: orange;
+            grid-area: D;
+        }
+        .box5{
+            background-color: magenta;
+            grid-area: E;
+        }
+        .box6{
+            background-color: black;
+            grid-area: F;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont1">
+        <div class="box box1">A</div>
+        <div class="box box2">B</div>
+        <div class="box box3">C</div>
+        <div class="box box4">D</div>
+        <div class="box box5">E</div>
+        <div class="box box6">F</div>
+    </div>
+</body>
+</html>

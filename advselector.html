@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Normal way
+        h1{
+            color: aqua;
+        }
+        p{
+            color: aqua;
+        }
+        b{
+            color: aqua;
+        } */
+         /* Group Selector*/
+         h1,p,b{
+            color:aqua;
+         }
+         /* Descendent selector*/
+         div p{
+            background-color: bisque;
+         }
+         /*Descendent selector(child selector)*/
+         div>p{
+            font-family: algerian;
+            color: red;
+         }
+         /*Adjacant sibiling selector*/
+         h2+p{
+            color: red;
+            font-family: cursive;
+         }
+         /*General Selector*/
+         h2~p{
+            font-family: lucida handwriting;
+         }
+        /*Multiple class selecetor*/
+        /* .container{
+            color: red;
+        }  */
+        .mycontainer{
+            color: blue;
+        }
+        .btn.primary{
+            border: 2px solid black;
+            background-color: red;
+
+        }
+    </style>
+</head>
+<body>
+    <h1> Advanced Selectors</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, sint! Debitis iure amet in odio recusandae ut molestias molestiae eveniet. Sunt cumque assumenda eveniet. Dolor, dolorum. Natus, quia? Soluta, laborum.
+        Sapiente laudantium porro accusantium quas maiores, error aliquam itaque nisi suscipit quae omnis pariatur repudiandae perferendis est. Blanditiis non commodi, facilis, veniam ipsum cupiditate ipsam neque eius doloremque quos illum.
+        Ipsam fugit maiores doloribus repellendus eaque commodi qui sint numquam, consequatur laborum quam quod. Officiis dolore provident, repellat ex et pariatur! Blanditiis a accusamus repellat, accusantium explicabo sunt corrupti saepe.
+    </p>
+
+    <b>Thank you</b>
+    /* combinator(desendent selector)*/
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, officiis voluptate accusantium quod voluptates itaque dicta et libero aut amet unde labore porro iure alias quae magnam cupiditate ipsum necessitatibus.
+        </p>
+        <section>
+           <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, magni ipsa accusamus iusto quaerat tenetur soluta impedit, ab, incidunt omnis provident veniam non velit fugit sint inventore ut officiis recusandae.
+           </p>
+        </section>
+    </div>
+    <div class="main-cont">
+        <p> hero</p>
+        <div class"child-cont">
+            <p> zero</p>
+        </div>
+    </div>
+    <h2>
+        Heading level 2
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorum omnis nihil ad molestiae at quo quod, itaque corporis id nobis unde sint ab minus maiores rem eius quam blanditiis.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, enim corrupti? Quaerat id, saepe, non sequi iusto assumenda, architecto soluta recusandae quasi impedit molestiae corporis voluptatem unde fuga atque modi.
+    </p>
+    <H1>
+        HEading Level 1
+    </H1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptates expedita ex architecto ducimus eos! Tenetur, inventore praesentium totam tempora blanditiis quo eum quia id ipsum quod! Nulla, fugiat id?</p>
+    <h2>
+        HEading level 2
+    </h2>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora consequuntur praesentium modi architecto quae, sed minima dolorem minus ullam eos ipsum qui maxime labore. Deserunt amet laboriosam id eius dolorum?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, optio reiciendis. Illum vel sed ut voluptates minima tenetur perspiciatis velit impedit rem doloribus. Architecto consequuntur, vitae minima aspernatur ab impedit?
+    </p>
+    <div class="container mycontainer">
+        HERO
+    </div>
+
+    <button class="btn">
+        Click me
+    </button>
+    <button class="primary">
+        Dont click
+    </button>
+    <button class="btn primary">
+        login
+    </button>
+</body>
+</html>

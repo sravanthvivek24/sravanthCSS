@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.cont{
+    width: 300px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.bar{
+    height: 100%;
+    width: 0;
+    background:  green;
+    border-radius: 8px;
+    animation: load 3s infinite;
+    animation-duration: 5s;
+    /* animation-direction: reverse; */
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="bar">
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<hr>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+.loader{
+  width: 60px;
+  height: 60px;
+  border: 10px solid white;    
+  border-top: 8px solid blue; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="loader">
+
+    </div>
+</body>
+</html>

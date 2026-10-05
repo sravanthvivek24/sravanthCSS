@@ -1,0 +1,13 @@
+h1 {
+            color: aqua ;
+            background-color:rgb(255,0,0); 
+        }
+        .mech {
+            color: brown;
+            background-color:hsl(120,100%,50%);
+        }
+        #three{
+            color: red;
+            background-color: hsl(300,100%,50%);
+            
+        }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            gap: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 3s linear;
+            
+        }
+        .box:hover{
+            /* transform: rotate(180deg); */
+            /* transform: rotate(3turn); */
+            /* transform: scale(2); */
+            transform: scale(2);
+            /* border-radius: 50%; */
+        }
+        .box1:hover{
+            transform: scaleX(2);
+        }
+        .box2:hover{
+            transform: scaleY(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hero</div>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+</body>
+</html>

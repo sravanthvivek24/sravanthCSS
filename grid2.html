@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 80px 300px 80px;
+            grid-template-areas: "header header header header header" "aside main main main right-side" "footer footer footer footer footer";
+            gap: 5px;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #F62440;
+            font-size: 20px;
+            border-radius: 20px;
+        }
+
+        .box1 {
+            grid-area: header;
+            background-color: #C5B3D3;
+        }
+
+        .box2 {
+            grid-area: aside;   
+            background-color: #FFE2E2;
+        }
+
+        .box3 {
+            grid-area: main;
+            background-color: #F5CBCB;
+        }
+
+        .box4{
+            grid-area: right-side;
+            background-color: #FFE2E2;
+        }
+
+        .box5 {
+            background-color: #C5B3D3;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box box1">Header</div>
+        <div class="box box2">ASide</div>
+        <div class="box box3">Main Section</div>
+        <div class="box box4">Right side</div>
+        <div class="box box5">Footer</div>
+    </div>
+</body>
+
+</html>

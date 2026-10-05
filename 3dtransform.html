@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .cont{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            perspective: 200px;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center ;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: red;
+            transition: all 3s;
+        }
+        .box1:hover{
+            transform: rotateX(-45deg);
+        }
+        .box2:hover{
+            transform: rotateY(45deg);
+        }
+        .box3:hover{
+            /* transform: rotate(45deg); */
+            transform: translatez(-50px);
+        }
+
+    </style>
+</head>
+<body>
+   <div class="cont">
+        <div class="box box1">hero1</div>
+        <div class="box box2">hero2</div>
+        <div class="box box3">hero3</div>
+   </div>
+</body>
+</html>
